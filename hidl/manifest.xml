@@ -257,15 +257,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -519,15 +510,6 @@
         <version>1.1</version>
         <interface>
             <name>IHwWifiExt</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
     </hal>
