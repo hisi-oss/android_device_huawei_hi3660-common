@@ -6,6 +6,9 @@
 
 COMMON_PATH := device/huawei/hi3660-common
 
+# Broken
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
