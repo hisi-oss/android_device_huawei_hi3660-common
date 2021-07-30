@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     init.tee.rc \
     init.vowifi.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.hi3660.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
