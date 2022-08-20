@@ -11,6 +11,7 @@
 /dev/block/platform/ff3b0000\.ufs/by-name/product       u:object_r:system_block_device:s0
 /dev/block/platform/ff3b0000\.ufs/by-name/system        u:object_r:system_block_device:s0
 /dev/block/platform/ff3b0000\.ufs/by-name/vendor        u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/version       u:object_r:metadata_block_device:s0
 
 # Block devices (mmc)
 /dev/block/platform/hi_mci\.0/by-name/cust          u:object_r:system_block_device:s0
@@ -25,3 +26,4 @@
 /dev/block/platform/hi_mci\.0/by-name/product       u:object_r:system_block_device:s0
 /dev/block/platform/hi_mci\.0/by-name/system        u:object_r:system_block_device:s0
 /dev/block/platform/hi_mci\.0/by-name/vendor        u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/version       u:object_r:metadata_block_device:s0
