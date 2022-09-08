@@ -1,0 +1,27 @@
+# Block devices (ufs)
+/dev/block/platform/ff3b0000\.ufs/by-name/cust          u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/eng_system    u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/eng_vendor    u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/odm           u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/patch         u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/preas         u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/preavs        u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/prets         u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/pretvs        u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/product       u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/system        u:object_r:system_block_device:s0
+/dev/block/platform/ff3b0000\.ufs/by-name/vendor        u:object_r:system_block_device:s0
+
+# Block devices (mmc)
+/dev/block/platform/hi_mci\.0/by-name/cust          u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/eng_system    u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/eng_vendor    u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/odm           u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/patch         u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/preas         u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/preavs        u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/prets         u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/pretvs        u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/product       u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/system        u:object_r:system_block_device:s0
+/dev/block/platform/hi_mci\.0/by-name/vendor        u:object_r:system_block_device:s0
