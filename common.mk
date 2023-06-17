@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
 # Fstab
 PRODUCT_PACKAGES += \
     fstab.hi3660 \
+    fstab.hi3660_ramdisk \
     fstab.modem
 
 # Init scripts
