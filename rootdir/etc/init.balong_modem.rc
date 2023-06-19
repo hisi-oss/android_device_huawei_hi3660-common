@@ -2,7 +2,7 @@ on fs
 	mkdir /mnt/modem 0755 root system
 	mkdir /mnt/modem/modem_secure 0755 root system
 	mkdir /mnt/modem/mnvm2:0 0755 root system
-	mount_all /vendor/etc/fstab.modem --early
+	mount_all /vendor/etc/fstab.modem
 	chown radio radio sys/devices/platform/balong_power/state
 
 on post-fs-data && property:sys.hisi.pmom.service.enable=true
