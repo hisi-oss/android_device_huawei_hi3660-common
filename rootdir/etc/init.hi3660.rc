@@ -157,10 +157,9 @@ on init
     write /sys/class/devfreq/ddrfreq_up_threshold/max_freq 1866000000
     write /sys/class/devfreq/ddrfreq_up_threshold/min_freq 1866000000
 
-    write /proc/sys/kernel/hung_task_panic 1
+    write /proc/sys/kernel/hung_task_panic 0
     write /proc/sys/kernel/hung_task_timeout_secs 90
-    write /sys/kernel/hungtask/monitorlist "whitelist,system_server,surfaceflinger,init"
-    write /sys/kernel/hungtask/enable "on"
+    write /sys/kernel/hungtask/enable "off"
     chown system system /sys/kernel/hungtask/vm_heart
 
     chown root system /sys/kernel/virt_to_phys
