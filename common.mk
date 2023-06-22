@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
     fstab.hi3660_ramdisk \
     fstab.modem
 
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.audio.rc \
