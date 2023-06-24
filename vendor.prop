@@ -14,6 +14,7 @@ vendor.camera.dis.flag=2
 vendor.camera.tnr.flag=1
 
 # Display
+debug.renderengine.backend=threaded
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.opengles.version=196610
