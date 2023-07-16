@@ -91,4 +91,5 @@ TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 include device/hisi/sepolicy/SEPolicy.mk
 
 # Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_USE_VNDK_OVERRIDE := true
