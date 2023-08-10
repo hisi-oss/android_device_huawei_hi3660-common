@@ -66,6 +66,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc)
             sed -i 's|vendor/preavs|vendor|g' "${2}"
             ;;
+        vendor/etc/init/rild.rc)
+            sed -i '1i on property:sys.rilprops_ready=1\n    start vendor.ril-daemon\n' "${2}"
+            echo "    disabled" >> "${2}"
+            ;;
         vendor/lib64/hw/audio.primary_hisi.hi3660.so)
             "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
             ;;
