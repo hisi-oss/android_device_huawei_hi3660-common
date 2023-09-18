@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/glgps*)
+            sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
         vendor/lib64/hw/audio.primary_hisi.hi3660.so)
             "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
             ;;
