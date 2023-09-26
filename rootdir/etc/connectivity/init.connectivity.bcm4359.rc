@@ -19,9 +19,6 @@ on boot
      chown bluetooth bluetooth /proc/bluetooth_power/data/calibrate
      chmod 664 /proc/bluetooth_power/data/calibrate
 
-     # for bluetooth mac
-     mkdir /data/vendor/bluedroid 02770 bluetooth bluetooth
-
 #wifi
     setprop wifi.interface wlan0
     setprop wifi.direct.interface p2p-dev-wlan0

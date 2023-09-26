@@ -4,6 +4,19 @@ on post-fs
     restorecon /vendor/bin/wifidrvload
     chmod 750 /venodor/bin/wifidrvload
 
+on post-fs-data
+    # Create the directories used by the Bluetooth subsystem
+    mkdir /data/vendor/bluedroid 0771 bluetooth bluetooth
+
+on property:sys.conn_macs.ready=1
+    # Bluetooth
+    chown bluetooth bluetooth /data/vendor/bluedroid/macbt
+    chmod 0666 /data/vendor/bluedroid/macbt
+
+    # Wi-Fi
+    chown wifi wifi /data/vendor/wifi/macwlan
+    chmod 0666 /data/vendor/wifi/macwlan
+
 service wifidrvload /vendor/bin/wifidrvload
     class late_start
     user root
@@ -55,10 +68,4 @@ service iprenew_p2p /system/bin/dhcpcd -n
 service iprenew_bnep0 /system/bin/dhcpcd -n
     class main
     disabled
-    oneshot
-
-service macaddr /vendor/bin/mac_addr_normalization
-    class late_start
-    user root
-    group root bluetooth wifi system
     oneshot
