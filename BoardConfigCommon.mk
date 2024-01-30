@@ -95,6 +95,7 @@ TARGET_BOARD_PLATFORM := hi3660
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
