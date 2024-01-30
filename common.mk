@@ -88,6 +88,12 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
+# Huawei - stubs
+PRODUCT_PACKAGES += \
+    libchrlog \
+    libhwlog \
+    libxcollie
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.audio.rc \
