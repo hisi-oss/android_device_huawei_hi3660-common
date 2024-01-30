@@ -5,6 +5,7 @@ persist.kirin.media.offload.enable=true
 persist.kirin.media.usbvoice.enable=true
 ro.vendor.config.hw_music_lp=true
 ro.vendor.config.music_lp_vol=true
+ro.hardware.audio.primary=hisi_wrapper
 
 # Bluetooth
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt

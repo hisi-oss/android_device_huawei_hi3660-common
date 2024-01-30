@@ -60,7 +60,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib64/hw/audio.primary.hi3660.so)
+        vendor/lib64/hw/audio.primary_hisi.hi3660.so)
             "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
             ;;
         vendor/lib*/hw/gralloc.hi3660.so)
