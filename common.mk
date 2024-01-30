@@ -106,5 +106,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ueventd.hi3660.rc
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libui-v28
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/huawei/hi3660-common/hi3660-common-vendor.mk)
