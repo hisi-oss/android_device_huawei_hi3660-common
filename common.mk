@@ -8,6 +8,10 @@
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/connectivity/,$(TARGET_COPY_OUT_VENDOR)/etc/init/connectivity)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fstab
 PRODUCT_PACKAGES += \
     fstab.hi3660 \
