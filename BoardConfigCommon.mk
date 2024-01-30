@@ -85,6 +85,7 @@ TARGET_BOARD_PLATFORM := hi3660
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.hi3660
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
