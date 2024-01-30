@@ -148,7 +148,7 @@ vendor/etc/xml/uniperf_config_cust.xml
 
 # TEE (system)
 system/bin/tee_auth_daemon
-system/etc/native_packages.xml
+system/etc/native_packages.xml:system/etc/native_packages.bin
 system/lib/libc_secshared.so
 system/lib/libteec_client.so
 system/lib/libteeclientjni.so
@@ -167,7 +167,7 @@ vendor/bin/hw/vendor.huawei.hardware.libteec@2.0-service
 vendor/bin/teecd
 vendor/bin/tlogcat
 vendor/etc/init/vendor.huawei.hardware.libteec@2.0-service.rc
-vendor/etc/native_packages.xml
+vendor/etc/native_packages.xml:vendor/etc/native_packages.bin
 vendor/lib/hw/vendor.huawei.hardware.libteec@2.0-impl.so
 vendor/lib/libc_secshared.so
 vendor/lib/libstorekeybox.so
