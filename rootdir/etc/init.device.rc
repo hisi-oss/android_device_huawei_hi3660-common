@@ -4,8 +4,6 @@ on early-boot
     start hwemerffu
 
 on boot
-    chown system system /sys/class/leds/lcd_backlight0/brightness
-    chmod 644 /sys/class/leds/lcd_backlight0/brightness
     chown system system /sys/class/graphics/fb0/sbl_ctrl
     chown system system /sys/class/graphics/fb0/lcd_color_temperature
     chown system system /sys/class/graphics/fb0/led_rg_lcd_color_temperature
@@ -126,16 +124,6 @@ on boot
     chown system system /sys/class/fts/fts_i2c/iwr
     chown system system /sys/class/fts/fts_i2c/iwr_result
 
-#led sysfs
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/delay_off
-    chown system system /sys/class/leds/red/delay_on
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/green/delay_off
-    chown system system /sys/class/leds/green/delay_on
-    chown system system /sys/class/leds/blue/brightness
-    chown system system /sys/class/leds/blue/delay_off
-    chown system system /sys/class/leds/blue/delay_on
     mkdir /data/vendor/log/fingerprint
     chown system system /data/vendor/log/fingerprint
 
