@@ -472,6 +472,35 @@ vendor/etc/perfgenius_scenario_policy.xml
 vendor/etc/xml/iaware_config_cust.xml
 vendor/etc/xml/uniperf_config_cust.xml
 
+# RIL
+vendor/bin/hw/rild
+vendor/etc/init/rild.rc
+vendor/lib/lib_wifi_sar.so
+vendor/lib/libbalong-ril-1.so
+vendor/lib/libbalong-ril-2.so
+vendor/lib/libbalong-ril.so
+vendor/lib/libcommril.so
+-vendor/lib/libril.so
+vendor/lib/vendor.huawei.hardware.hisiradio@1.0.so
+vendor/lib/vendor.huawei.hardware.hisiradio@1.1.so
+vendor/lib/vendor.huawei.hardware.radio.chr@1.0.so
+vendor/lib/vendor.huawei.hardware.radio.deprecated@1.0.so
+vendor/lib/vendor.huawei.hardware.radio.ims@1.0.so
+vendor/lib/vendor.huawei.hardware.radio@2.0.so
+vendor/lib64/lib_wifi_sar.so
+vendor/lib64/libbalong-ril-1.so
+vendor/lib64/libbalong-ril-2.so
+vendor/lib64/libbalong-ril.so
+vendor/lib64/libcommril.so
+-vendor/lib64/libril.so
+vendor/lib64/vendor.huawei.hardware.hisiradio@1.0.so
+vendor/lib64/vendor.huawei.hardware.hisiradio@1.1.so
+vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so
+vendor/lib64/vendor.huawei.hardware.radio.deprecated@1.0.so
+vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so
+vendor/lib64/vendor.huawei.hardware.radio@2.0.so
+vendor/phone.prop
+
 # Sensors
 vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
 vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc

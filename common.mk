@@ -201,6 +201,14 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    librilutils
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.hi3660.rc
