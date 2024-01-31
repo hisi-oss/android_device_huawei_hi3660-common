@@ -37,6 +37,10 @@ on early-boot
     write /sys/class/irda/irda_maxim/power_cfg 1
     chown system system /sys/class/irda/irda_chip/ir_chip_type
 
+on early-fs
+    wait /dev/block/by-name/oeminfo
+    start oeminfo_nvm
+
 on init
     chown system system /sys/class/hisi_thermal/spm/spm_mode
     chmod 644 /sys/class/hisi_thermal/spm/spm_mode
@@ -422,6 +426,10 @@ on early-boot
 #	group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
 
 on boot
+    # Oeminfo
+    chmod 0666 /dev/socket/oeminfo_nvm
+    chown system system /dev/socket/oeminfo_nvm
+
 # add for flash
     chown system system /sys/bus/platform/drivers/huawei,camcfgdev/guard_thermal
     chown system system /sys/class/leds/torch/brightness
@@ -857,6 +865,12 @@ service gpuassistant /system/bin/gpuassistant
     class core
     user system
     group system
+
+service oeminfo_nvm /vendor/bin/oeminfo_nvm_server
+    class core
+    group system readproc root
+    critical
+    ioprio rt 4
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \

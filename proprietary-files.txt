@@ -415,6 +415,24 @@ vendor/lib64/libOMX.hisi.video.encoder.so
 vendor/lib64/libOMX_Core.so
 vendor/lib64/libstagefrighthw.so
 
+# OEMInfo
+vendor/bin/hisecd
+vendor/bin/oeminfo_gamma
+vendor/bin/oeminfo_nvm_server
+vendor/etc/init/hisecd.rc
+vendor/lib/libBootloaderOeminfo.so
+vendor/lib/lib_device_interface.so
+vendor/lib/lib_factory_interface.so
+vendor/lib/lib_mmi_interface.so
+vendor/lib/libnvme.so
+vendor/lib/liboeminfo.so
+vendor/lib64/libBootloaderOeminfo.so
+vendor/lib64/lib_device_interface.so
+vendor/lib64/lib_factory_interface.so
+vendor/lib64/lib_mmi_interface.so
+vendor/lib64/libnvme.so
+vendor/lib64/liboeminfo.so
+
 # Perf
 vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
 vendor/bin/hw/vendor.huawei.hardware.perfgenius@2.0-service
