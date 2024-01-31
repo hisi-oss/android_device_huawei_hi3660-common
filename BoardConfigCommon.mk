@@ -87,6 +87,15 @@ TARGET_BOARD_PLATFORM := hi3660
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS += \
+    3rdmodem \
+    3rdmodemnvm \
+    3rdmodemnvmbkp \
+    modem_log \
+    sec_storage \
+    splash2
+
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
 
