@@ -234,6 +234,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.huawei
 
+# Livedisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.hisi
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.huawei-libperfmgr
