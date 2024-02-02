@@ -207,6 +207,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor
 
 PRODUCT_PACKAGES += \
+    libril \
     librilutils
 
 # Recovery

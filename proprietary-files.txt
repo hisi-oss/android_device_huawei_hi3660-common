@@ -480,7 +480,7 @@ vendor/lib/libbalong-ril-1.so
 vendor/lib/libbalong-ril-2.so
 vendor/lib/libbalong-ril.so
 vendor/lib/libcommril.so
--vendor/lib/libril.so
+-vendor/lib/libril.so:vendor/lib/libril-hisi.so
 vendor/lib/vendor.huawei.hardware.hisiradio@1.0.so
 vendor/lib/vendor.huawei.hardware.hisiradio@1.1.so
 vendor/lib/vendor.huawei.hardware.radio.chr@1.0.so
@@ -492,7 +492,7 @@ vendor/lib64/libbalong-ril-1.so
 vendor/lib64/libbalong-ril-2.so
 vendor/lib64/libbalong-ril.so
 vendor/lib64/libcommril.so
--vendor/lib64/libril.so
+-vendor/lib64/libril.so:vendor/lib64/libril-hisi.so
 vendor/lib64/vendor.huawei.hardware.hisiradio@1.0.so
 vendor/lib64/vendor.huawei.hardware.hisiradio@1.1.so
 vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so

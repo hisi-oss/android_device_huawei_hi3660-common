@@ -85,6 +85,9 @@ function blob_fixup() {
         vendor/lib64/libcamera_algo.so)
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
+        vendor/lib*/libril-hisi.so)
+            "${PATCHELF}" --set-soname "libril-hisi.so" "${2}"
+            ;;
         vendor/lib/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
             ;;
