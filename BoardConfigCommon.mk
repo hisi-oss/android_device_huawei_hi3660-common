@@ -79,3 +79,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := hi3660
+
+# SEPolicy
+include device/hisi/sepolicy/SEPolicy.mk
