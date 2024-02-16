@@ -31,6 +31,10 @@ TARGET_NO_BOOTLOADER := true
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# HIDL
+DEVICE_MATRIX_FILE += $(COMMON_PATH)/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/hidl/manifest.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00078000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
