@@ -1,0 +1,96 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// fstab
+prebuilt_etc {
+    name: "fstab.hi3660",
+    src: "etc/fstab.hi3660",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.modem",
+    src: "etc/fstab.modem",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.audio.rc",
+    src: "etc/init.audio.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.balong_modem.rc",
+    src: "etc/init.balong_modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.device.rc",
+    src: "etc/init.device.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hi3660.rc",
+    src: "etc/init.hi3660.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.rc",
+    src: "etc/init.hisi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.usb.rc",
+    src: "etc/init.hisi.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.platform.rc",
+    src: "etc/init.platform.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.tee.rc",
+    src: "etc/init.tee.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vowifi.rc",
+    src: "etc/init.vowifi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.hi3660.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.hi3660.rc",
+    vendor: true,
+}
