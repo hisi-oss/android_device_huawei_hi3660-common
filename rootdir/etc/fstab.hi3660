@@ -12,6 +12,9 @@
 /dev/block/by-name/misc      /misc      emmc     defaults     defaults
 /dev/block/by-name/hisee_fs  /mnt/hisee_fs ext4  ro,barrier=1,context=u:object_r:hisee_data_file:s0 wait,check,notrim,nofail
 
+/dev/block/by-name/kernel              /boot          emmc    defaults        recoveryonly
+/dev/block/by-name/recovery_ramdisk    /recovery      emmc    defaults        recoveryonly
+
 /devices/hi_mci.1/mmc_host/mmc1/*                       auto                auto      defaults      voldmanaged=sdcard:auto,noemulatedsd
 /devices/platform/hi_mci.1/mmc_host/mmc1/*              auto                auto      defaults      voldmanaged=sdcard:auto,noemulatedsd
 
