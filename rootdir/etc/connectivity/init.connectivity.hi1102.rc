@@ -24,6 +24,7 @@ on early-init
 on boot
 #   for bluetooth mac
     mkdir /data/vendor/bluedroid 02770 bluetooth bluetooth
+    chown bluetooth bluetooth /dev/hwbt
 
 # optimize selinux strategy for OTA
 on post-fs-data
@@ -124,7 +125,3 @@ service fusd /vendor/bin/fusion_daemon
     class late_start
     user system
     group system root wakelock
-
-#bluetooth
-
-   chown bluetooth bluetooth /dev/hwbt

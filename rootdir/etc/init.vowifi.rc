@@ -1,6 +1,4 @@
-
-on early-boot
-    service hivwserver /vendor/bin/hivwserver
+service hivwserver /vendor/bin/hivwserver
     class vowifi
     user system
     group audio inet net_bt net_bt_admin net_bw_acct system

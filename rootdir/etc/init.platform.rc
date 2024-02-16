@@ -1,7 +1,4 @@
- early-init
-
 on init
-
 #Create cgroup mount point for freezer
     mkdir /dev/frz
     mount cgroup none /dev/frz freezer
@@ -15,21 +12,14 @@ on init
     chmod 0770 /dev/frz/aware_frozen
     chown root root /dev/frz/aware_frozen
 
-
-on early-fs
-
 on fs
     restorecon       /sys/class/graphics/fb0/lcd_cabc_mode
     restorecon       /sys/class/leds/torch/flash_thermal_protect
-
-on post-fs
-    sys_wp_init_action
 
 on charger
     class_start core
 
 on post-fs-data
-    
     chown root system /sys/kernel/exmbist_test/test_entry
     chmod 0664 /sys/kernel/exmbist_test/test_entry
 
@@ -224,9 +214,6 @@ on boot
     chown system system /dev/acm
 #wangning 00384503 20171113 AR0009KSSB end
 
-on property:sys.printservice=*
-    printservice ${sys.printservice}
-
 on property:vold.decrypt=trigger_reset_main
     class_reset main
     class_reset late_start
@@ -267,30 +254,24 @@ on nonencrypted
     trigger start_latestart_class
     trigger data_ready
 
-on verify_cust_oeminfo_action
-    verify_cust_oeminfo
-
 on data_ready
-    verify_cust_oeminfo
     write /proc/post-fs-data 1
     write /proc/apanic_console 1
 
 on data_not_ready
     write /proc/post-fs-data 0
 ### encryption end
-
-
     start bastetd
 
 service fuse_sdcard1rw /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sdcard1 /storage/sdcard1
    class late_start
    disabled
 
-   service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
+service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
    class late_start
    disabled
 
-   service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1015 -d /mnt/media_rw/usbotg /storage/usbotg
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1015 -d /mnt/media_rw/usbotg /storage/usbotg
    class late_start
    disabled
 
@@ -299,7 +280,7 @@ service preparesdservice /system/bin/vdc volume storagetosd
    disabled
    oneshot
 
-   ## Service definition
+## Service definition
 service hiscoutmanager /system/vendor/bin/hiscoutmanager
     class late_start
     user root

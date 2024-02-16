@@ -1,8 +1,8 @@
 import /vendor/etc/init/connectivity/init.connectivity.${ro.boot.odm.conn.chiptype}.rc
+
 on post-fs
     restorecon /vendor/bin/wifidrvload
     chmod 750 /venodor/bin/wifidrvload
-    chgrp shell /vendor/bin/wifidrvload
 
 service wifidrvload /vendor/bin/wifidrvload
     class late_start

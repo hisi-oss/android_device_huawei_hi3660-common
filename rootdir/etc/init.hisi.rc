@@ -1,7 +1,3 @@
-import  /vendor/etc/init/charger/init.chip.usb.rc
-
-on early-init
-
 on init
     write /sys/module/hisi_nve/parameters/nve /dev/block/by-name/nvme
     #change nve device visit permission
@@ -25,10 +21,6 @@ on init
     chmod 0600 /dev/workingset/monitor1/workingset.state
     chmod 0600 /dev/workingset/monitor0/workingset.data
     chmod 0600 /dev/workingset/monitor1/workingset.data
-
-on early-fs
-
-on fs
 
 on post-fs
     chown system system /proc/uid_cputime/show_uid_stat
