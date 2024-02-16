@@ -4,11 +4,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 /dev/block/by-name/system    /system    ext4     ro,barrier=1    wait
 /dev/block/by-name/vendor    /vendor    ext4     ro,barrier=1    wait
-/dev/block/by-name/product   /product   ext4:squashfs    ro    wait
-/dev/block/by-name/version   /version   ext4:squashfs    ro    wait
-/dev/block/by-name/cust      /cust      ext4     ro    wait
 /dev/block/by-name/odm       /odm       ext4     ro    wait
-/dev/block/by-name/patch     /patch_hw  ext4     ro    wait
 
 /dev/block/by-name/splash2   /splash2   ext4     rw,nosuid,nodev,noatime,data=ordered,context=u:object_r:splash2_data_file:s0 wait,check,nofail
 /dev/block/by-name/userdata  /data      f2fs     nosuid,nodev,noatime,discard,inline_data,inline_xattr wait,check,fileencryption=aes-256-xts:aes-256-cts,reservedsize=20M

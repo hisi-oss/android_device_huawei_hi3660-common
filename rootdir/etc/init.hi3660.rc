@@ -365,16 +365,7 @@ on charger
     write /sys/class/devfreq/ddrfreq_up_threshold/min_freq 1866000000
 
 on fs
-    # mount mtd partitions
-    #mkdir /patch_hw 0775 system system
-    export ANDROID_STORAGE ""
-
     mount_all /vendor/etc/fstab.${ro.hardware}
-    exec - root root -- /patch_hw/patch_procedure
-
-    mount_all /patch_hw/fstab.patch_step1
-    mount_all /patch_hw/fstab.patch_step2
-
 
     restorecon /splash2
     chmod 775 /splash2
