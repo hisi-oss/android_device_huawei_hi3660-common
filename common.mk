@@ -92,3 +92,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Ueventd
 PRODUCT_PACKAGES += \
     ueventd.hi3660.rc
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/huawei/hi3660-common/hi3660-common-vendor.mk)

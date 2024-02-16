@@ -110,6 +110,9 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     sec_storage \
     splash2
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2021-05-01
+
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
@@ -117,3 +120,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_USE_VNDK_OVERRIDE := true
+
+# Inherit the proprietary files
+include vendor/huawei/hi3660-common/BoardConfigVendor.mk
