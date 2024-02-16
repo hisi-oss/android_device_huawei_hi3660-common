@@ -311,6 +311,11 @@ on init
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/vip/schedtune.prefer_idle 1
 
+    # Zram
+    write /proc/sys/vm/page-cluster 0
+    write /sys/block/zram0/max_comp_streams 8
+    write /sys/block/zram0/comp_algorithm lz4
+    swapon_all /vendor/etc/fstab.hi3660
 
 on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
@@ -844,31 +849,6 @@ service datarply /vendor/bin/data_replay
 
 on property:service.bootanim.exit=1
     write /proc/balong/stats/boot_time 1
-
-on property:ro.boot.vendor.ddrsize=2
-    write /proc/sys/vm/page-cluster 0
-    write /sys/block/zram0/max_comp_streams 8
-    write /sys/block/zram0/comp_algorithm lz4
-    swapon_all fstab.zram768m
-
-on property:ro.boot.vendor.ddrsize=3
-    write /proc/sys/vm/page-cluster 0
-    write /sys/block/zram0/max_comp_streams 8
-    write /sys/block/zram0/comp_algorithm lz4
-    swapon_all fstab.zram1024m
-
-on property:ro.boot.vendor.ddrsize=4
-    write /proc/sys/vm/page-cluster 0
-    write /sys/block/zram0/max_comp_streams 8
-    write /sys/block/zram0/comp_algorithm lz4
-    swapon_all fstab.zram2240m
-
-on property:ro.boot.vendor.ddrsize=6
-    write /proc/sys/vm/page-cluster 0
-    write /sys/block/zram0/max_comp_streams 8
-    write /sys/block/zram0/comp_algorithm lz4
-    swapon_all fstab.zram2240m
-    setprop persist.enable_task_snapshots true
 
 on property:ro.runmode=normal
     write /sys/class/hw_power/charger/charge_data/iin_thermal 900

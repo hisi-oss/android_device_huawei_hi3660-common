@@ -22,4 +22,4 @@
 /devices/ff200000.hisi_usb/ff100000.dwc3/*              auto                auto      defaults      voldmanaged=usbotg:auto
 /devices/platform/ff200000.hisi_usb/ff100000.dwc3/*     auto                auto      defaults      voldmanaged=usbotg:auto
 
-/dev/block/zram0             none         swap    defaults     zramsize=536870912
+/dev/block/zram0             none         swap    defaults     zramsize=50%
