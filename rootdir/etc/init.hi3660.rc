@@ -789,8 +789,6 @@ on post-fs-data
 
 
 #FIXME: open DIS and TNR directly
-    setprop vendor.camera.dis.flag 2
-    setprop vendor.camera.tnr.flag 1
     mkdir /data/vendor/camera
     chown media camera /data/vendor/camera
     chmod 770 /data/vendor/camera
