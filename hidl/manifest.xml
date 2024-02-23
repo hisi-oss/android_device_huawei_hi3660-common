@@ -375,15 +375,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.huawei.hardware.hwvibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHWVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.iawareperf</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
