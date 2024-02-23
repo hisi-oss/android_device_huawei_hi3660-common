@@ -1,5 +1,26 @@
 # All unpinned blobs below are extracted from STF-L09-user 9.1.0 HUAWEISTF-L09 231-OVS-LGRP2 release-keys
 
+# Audio
+vendor/lib64/hw/audio.primary.hisi.so:vendor/lib64/hw/audio.primary.hi3660.so
+vendor/lib64/libasd.so
+vendor/lib64/libaudio_custom.so
+vendor/lib64/libaudio_custom_v2.so
+vendor/lib64/libaudio_utils.so
+vendor/lib64/libaudiodump.so
+vendor/lib64/libmax98925.so
+vendor/lib64/librttserver.so
+vendor/lib64/libsmartpakit.so
+vendor/lib64/libtas2560.so
+vendor/lib64/vendor.huawei.hardware.rtt@1.0.so
+
+# Audio FX modules
+vendor/lib/libhuaweiaudioeffectutil.so
+vendor/lib/soundfx/libhuaweiprocessing.so
+vendor/lib/soundfx/liboffloadvisualizer.so
+vendor/lib64/libhuaweiaudioeffectutil.so
+vendor/lib64/soundfx/libhuaweiprocessing.so
+vendor/lib64/soundfx/liboffloadvisualizer.so
+
 # Biometrics
 vendor/bin/hw/vendor.huawei.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/vendor.huawei.hardware.biometrics.fingerprint@2.1-service.rc
