@@ -40,6 +40,19 @@ vendor/etc/bluetooth/bt_vendor.conf
 vendor/lib64/libbt-vendor-hisi.so
 vendor/lib64/libbt-vendor.so:vendor/lib64/libbt-vendor-bcm.so
 
+# Connectivity
+vendor/bin/oam_hisi
+vendor/bin/octty
+vendor/bin/start_connectivity_hisi
+vendor/lib/libc_sec_hisi_connectivity.so
+vendor/lib/libpf_customize_hisi.so
+vendor/lib/libpf_oneimage_hisi.so
+vendor/lib/libpf_rotate_hisi.so
+vendor/lib64/libc_sec_hisi_connectivity.so
+vendor/lib64/libpf_customize_hisi.so
+vendor/lib64/libpf_oneimage_hisi.so
+vendor/lib64/libpf_rotate_hisi.so
+
 # Display
 vendor/bin/hw_display_test
 vendor/lib/libgpucommon_vendor_client.so
