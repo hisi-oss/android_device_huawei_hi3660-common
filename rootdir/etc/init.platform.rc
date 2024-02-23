@@ -288,19 +288,6 @@ service hiscoutmanager /system/vendor/bin/hiscoutmanager
     oneshot
     seclabel u:r:hiscoutmanager:s0
 	
-## vowifi iked defalut start
-## Service definition
-service iked /system/vendor/bin/iked
-    interface vendor.huawei.hardware.iked@1.0::IIkedDevice default
-    class late_start
-    user root
-	disabled
-    group system wakelock
-    seclabel u:r:iked:s0
-	
-on property:ro.vendor.config.hw_vowifi=true
-    start iked
-	
 ## Service definition
 service logserver /system/bin/logserver
     class late_start
@@ -323,24 +310,6 @@ service imonitorv /system/vendor/bin/imonitor
     user root
     group system log
     seclabel u:r:logserver:s0
-    writepid /dev/cpuset/system-background/tasks /dev/cpuctl/bg_non_interactive/tasks /dev/stune/system-background/tasks /dev/blkio/system-background/tasks
-
-service modemlogcat /vendor/bin/modemlogcat_lte -z -l
-    class late_start
-    user root
-    group system radio
-    disabled
-    oneshot
-    writepid /dev/cpuset/system-background/tasks /dev/cpuctl/bg_non_interactive/tasks /dev/stune/system-background/tasks /dev/blkio/system-background/tasks
-
-
-service modematserver /vendor/bin/modemlogcat_lte -f hidp
-    interface vendor.huawei.hardware.modemlogcat@1.0::IModemlogcat default
-    class late_start
-    user root
-    group system radio
-    disabled
-    oneshot
     writepid /dev/cpuset/system-background/tasks /dev/cpuctl/bg_non_interactive/tasks /dev/stune/system-background/tasks /dev/blkio/system-background/tasks
 
 # Record boot complete metrics for modemlogcat
