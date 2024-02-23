@@ -1,5 +1,19 @@
 # All unpinned blobs below are extracted from STF-L09-user 9.1.0 HUAWEISTF-L09 231-OVS-LGRP2 release-keys
 
+# Biometrics
+vendor/bin/hw/vendor.huawei.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/vendor.huawei.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/lib/hw/fingerprint.hi3660.so
+vendor/lib/libfaccommon_share.so
+vendor/lib/libfacsignedapi_share.so
+vendor/lib/vendor.huawei.hardware.biometrics.fingerprint@2.1.so
+vendor/lib/vendor.huawei.hardware.hwvibrator@1.0.so
+vendor/lib64/hw/fingerprint.hi3660.so
+vendor/lib64/libfaccommon_share.so
+vendor/lib64/libfacsignedapi_share.so
+vendor/lib64/vendor.huawei.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
+
 # Display
 vendor/bin/hw_display_test
 vendor/lib/libgpucommon_vendor_client.so
