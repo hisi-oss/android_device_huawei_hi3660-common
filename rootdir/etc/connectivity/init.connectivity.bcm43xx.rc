@@ -51,19 +51,3 @@ on boot
     # rps function
     write /sys/class/net/wlan0/queues/rx-0/rps_cpus f
     write /sys/class/net/wlan0/queues/rx-0/rps_flow_cnt 4096
-
-service wifi_wakeup_src /vendor/bin/wifiwakeupsrc
-    class core
-    user root
-    group root wifi
-    disabled
-    oneshot
-
-service hostapd /vendor/bin/hw/hostapd
-    interface android.hardware.wifi.hostapd@1.0::IHostapd default
-    class main
-    capabilities NET_ADMIN NET_RAW
-    user wifi
-    group wifi net_raw net_admin
-    disabled
-    oneshot
