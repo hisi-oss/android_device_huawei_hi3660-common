@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
+# Hisi
+PRODUCT_PACKAGES += \
+    hisi_init
+
 # Huawei - stubs
 PRODUCT_PACKAGES += \
     libchrlog \

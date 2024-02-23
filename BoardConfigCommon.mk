@@ -41,6 +41,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/hidl/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //hardware/hisi:init_hisi
+TARGET_RECOVERY_DEVICE_MODULES := init_hisi
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00078000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
