@@ -95,6 +95,10 @@ vendor/bin/silead_6275_ta.sec
 vendor/lib/lib_fpc_tac_shared.so
 vendor/lib64/lib_fpc_tac_shared.so
 
+# Gatekeeper
+vendor/lib/hw/gatekeeper.hi3660.so
+vendor/lib64/hw/gatekeeper.hi3660.so
+
 # Graphics
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/libOpenCL.so
@@ -106,6 +110,10 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libOpenCLFoundation.so
 vendor/lib64/libSR_opencl.so
 vendor/lib64/libhiion.so
+
+# Keystore
+vendor/lib/hw/keystore.hi3660.so
+vendor/lib64/hw/keystore.hi3660.so
 
 # Perf
 vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service

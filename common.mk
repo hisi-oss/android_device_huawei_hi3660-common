@@ -80,6 +80,11 @@ PRODUCT_PACKAGES += \
     fstab.hi3660_ramdisk \
     fstab.modem
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
@@ -95,6 +100,16 @@ PRODUCT_PACKAGES += \
     init.platform.rc \
     init.tee.rc \
     init.vowifi.rc
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
+
+PRODUCT_PACKAGES += \
+    libkeymaster3device \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl
 
 # Recovery
 PRODUCT_PACKAGES += \
