@@ -288,6 +288,15 @@ vendor/etc/perfgenius_scenario_policy.xml
 vendor/etc/xml/iaware_config_cust.xml
 vendor/etc/xml/uniperf_config_cust.xml
 
+# Sensors
+vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
+vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
+vendor/lib/hw/sensors.default.so
+vendor/lib/vendor.huawei.hardware.sensors@1.0.so
+vendor/lib64/hw/sensors.default.so
+vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
+vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
+
 # TEE (system)
 system/bin/tee_auth_daemon
 system/etc/native_packages.xml:system/etc/native_packages.bin
