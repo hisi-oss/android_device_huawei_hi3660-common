@@ -35,6 +35,11 @@ vendor/lib64/libfacsignedapi_share.so
 vendor/lib64/vendor.huawei.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
 
+# Bluetooth
+vendor/etc/bluetooth/bt_vendor.conf
+vendor/lib64/libbt-vendor-hisi.so
+vendor/lib64/libbt-vendor.so
+
 # Display
 vendor/bin/hw_display_test
 vendor/lib/libgpucommon_vendor_client.so
