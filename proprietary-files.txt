@@ -270,6 +270,11 @@ vendor/lib64/vendor.huawei.hardware.hwdisplay.displayengine@1.2.so
 vendor/lib64/vendor.huawei.hardware.hwdisplay.displayfactory@1.0.so
 vendor/lib64/vendor.huawei.hardware.hwdisplay@1.0.so
 
+# DRM (widevine)
+preavs/bin/hw/android.hardware.drm@1.1-service.widevine:vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+preavs/lib/libwvhidl.so:vendor/lib/libwvhidl.so
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+
 # Fingerprint (tee)
 vendor/bin/fpc_1021_ta.sec
 vendor/bin/fpc_1021_ta_mha.sec

@@ -121,6 +121,21 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey
+
+PRODUCT_PACKAGES += \
+    libdrmclearkeyplugin \
+    libmockdrmcryptoplugin
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.1.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
