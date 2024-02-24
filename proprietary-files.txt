@@ -542,53 +542,26 @@ vendor/lib/libBootloaderOeminfo.so
 vendor/lib/lib_device_interface.so
 vendor/lib/lib_factory_interface.so
 vendor/lib/lib_mmi_interface.so
+vendor/lib/libhuaweicust.so
 vendor/lib/libnvme.so
 vendor/lib/liboeminfo.so
 vendor/lib64/libBootloaderOeminfo.so
 vendor/lib64/lib_device_interface.so
 vendor/lib64/lib_factory_interface.so
 vendor/lib64/lib_mmi_interface.so
+vendor/lib64/libhuaweicust.so
 vendor/lib64/libnvme.so
 vendor/lib64/liboeminfo.so
 
 # Perf
-vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
-vendor/bin/hw/vendor.huawei.hardware.perfgenius@2.0-service
-vendor/etc/init/vendor.huawei.hardware.iawareperf@1.0-service.rc
-vendor/etc/init/vendor.huawei.hardware.perfgenius@2.0-service.rc
-vendor/lib/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
-vendor/lib/libhisi_wrapper.so
-vendor/lib/libhuaweicust.so
 vendor/lib/libiawareperf_client.so
-vendor/lib/libiawareperf_server.so
-vendor/lib/libiawareperfpolicy_server.so
 vendor/lib/libperfgenius_vendor_client.so
-vendor/lib/libperfhub.so
-vendor/lib/libperfhub_service.so
 vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
-vendor/lib/vendor.huawei.hardware.iawareperfpolicy@1.0.so
 vendor/lib/vendor.huawei.hardware.perfgenius@2.0.so
-vendor/lib64/hw/vendor.huawei.hardware.iawareperf@1.0-impl.so
-vendor/lib64/hw/vendor.huawei.hardware.iawareperfpolicy@1.0-impl.so
-vendor/lib64/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
-vendor/lib64/libhisi_wrapper.so
-vendor/lib64/libhuaweicust.so
 vendor/lib64/libiawareperf_client.so
-vendor/lib64/libiawareperf_server.so
-vendor/lib64/libiawareperfpolicy_server.so
 vendor/lib64/libperfgenius_vendor_client.so
-vendor/lib64/libperfhub.so
-vendor/lib64/libperfhub_service.so
 vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
-vendor/lib64/vendor.huawei.hardware.iawareperfpolicy@1.0.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
-
-# Perf Configs
-vendor/etc/perfgenius_config.xml
-vendor/etc/perfgenius_event_policy.xml
-vendor/etc/perfgenius_scenario_policy.xml
-vendor/etc/xml/iaware_config_cust.xml
-vendor/etc/xml/uniperf_config_cust.xml
 
 # RIL
 vendor/bin/hw/rild

@@ -223,6 +223,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.huawei
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.huawei-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2.vendor \
@@ -239,8 +246,11 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/hisi \
-    hardware/huawei
+    hardware/huawei \
+    hardware/huawei/power-libperfmgr
 
 # Ueventd
 PRODUCT_PACKAGES += \
