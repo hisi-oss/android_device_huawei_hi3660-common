@@ -59,8 +59,6 @@ on init
 
 # set mtp device_type to Mobile Handset
     setprop sys.usb.mtp.device_type 3
-
-on boot
     setprop sys.usb.configfs 1
 
 on post-fs-data && property:sys.usb.configfs=1
