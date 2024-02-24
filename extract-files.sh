@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc)
             sed -i 's|vendor/preavs|vendor|g' "${2}"
             ;;
+        vendor/etc/init/android.hardware.secure_element@1.0-service.hisi.rc)
+            sed -i 's|android.hardware.secure_element@1.0-service|android.hardware.secure_element@1.0-service.hisi|g' "${2}"
+            ;;
         vendor/etc/init/rild.rc)
             sed -i '1i on property:sys.rilprops_ready=1\n    start vendor.ril-daemon\n' "${2}"
             echo "    disabled" >> "${2}"

@@ -501,6 +501,12 @@ vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so
 vendor/lib64/vendor.huawei.hardware.radio@2.0.so
 vendor/phone.prop
 
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.0-service:vendor/bin/hw/android.hardware.secure_element@1.0-service.hisi
+vendor/etc/init/android.hardware.secure_element@1.0-service.rc:vendor/etc/init/android.hardware.secure_element@1.0-service.hisi.rc
+vendor/lib/ese_hw_hal.so
+vendor/lib64/ese_hw_hal.so
+
 # Sensors
 vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
 vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
