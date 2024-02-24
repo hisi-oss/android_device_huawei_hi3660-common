@@ -51,3 +51,4 @@ ro.kirin.config.hw_perfgenius=true
 
 # RIL
 ro.telephony.default_network=9,9
+persist.radio.dualltecap=1
