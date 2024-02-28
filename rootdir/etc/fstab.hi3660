@@ -7,7 +7,7 @@
 /dev/block/by-name/odm       /odm       ext4     ro,barrier=1    wait,first_stage_mount
 
 /dev/block/by-name/splash2   /splash2   ext4     rw,nosuid,nodev,noatime,data=ordered,context=u:object_r:splashtwo_file:s0 wait,check,nofail
-/dev/block/by-name/userdata  /data      f2fs     nosuid,nodev,noatime,discard,inline_data,inline_xattr wait,check,latemount,fileencryption=aes-256-xts:aes-256-cts,reservedsize=20M
+/dev/block/by-name/userdata  /data      ext4     rw,nosuid,nodev,noatime,user_xattr,acl,barrier=1,data=ordered,noauto_da_alloc,mblk_io_submit,discard wait,check,latemount,fileencryption=aes-256-xts:aes-256-cts,reservedsize=20M
 /dev/block/by-name/cache     /cache     ext4     rw,nosuid,nodev,noatime,data=ordered wait,check
 /dev/block/by-name/misc      /misc      emmc     defaults     defaults
 /dev/block/by-name/hisee_fs  /mnt/hisee_fs ext4  ro,barrier=1,context=u:object_r:hisee_data_file:s0 wait,check,notrim,nofail
