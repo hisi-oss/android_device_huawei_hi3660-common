@@ -166,6 +166,8 @@ on boot
     chmod  0660  /sys/devices/platform/fingerprint/ud_fingerprint_chip_info
     chown  system  system  /sys/devices/platform/fingerprint/ud_fingerprint_chip_info
 
+    write /sys/devices/platform/fingerprint/nav 1
+
 #LRA vibrator
     chown system system /sys/class/timed_output/vibrator/vibrator_dbc_test
     chown system system /sys/class/timed_output/vibrator/vibrator_calib
