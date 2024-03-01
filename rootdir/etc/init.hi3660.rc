@@ -872,3 +872,11 @@ service vendor.keymaster-3-0 /vendor/bin/hw/android.hardware.keymaster@3.0-servi
     class early_hal
     user system
     group system drmrpc
+
+service CameraDaemon /vendor/bin/CameraDaemon hi3660 ${ro.vendor.camera.platform_name}
+    class main
+    user media
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/top-app/tasks /dev/stune/top-app/tasks

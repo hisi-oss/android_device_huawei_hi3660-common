@@ -75,6 +75,9 @@ function blob_fixup() {
         vendor/lib64/libbt-vendor-bcm.so)
             "${PATCHELF}" --set-soname "libbt-vendor-bcm.so" "${2}"
             ;;
+        vendor/lib64/libcamera_algo.so)
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
     esac
 }
 
