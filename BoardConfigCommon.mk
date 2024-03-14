@@ -48,6 +48,10 @@ BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_SECOND_OFFSET)
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_HAS_RAMDISK := false
+BOARD_CUSTOM_BOOTIMG_MK := hardware/huawei/mkbootimg.mk
+
 TARGET_KERNEL_SOURCE := kernel/huawei/hi3660
 TARGET_KERNEL_CONFIG := merge_hi3660_defconfig
 TARGET_KERNEL_CLANG_VERSION := r416183b
@@ -79,6 +83,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := hi3660
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := hardware/huawei/releasetools
 
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk

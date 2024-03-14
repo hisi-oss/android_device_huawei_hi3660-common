@@ -7,4 +7,5 @@
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/hisi
+    hardware/hisi \
+    hardware/huawei
