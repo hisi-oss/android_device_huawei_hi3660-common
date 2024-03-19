@@ -51,6 +51,59 @@
             "ResetOnInit": true
         },
         {
+            "Name": "DDRMaxFreq",
+            "Path": "/sys/class/devfreq/ddrfreq/max_freq",
+            "Values": [
+                "1866000000",
+                "1244000000",
+                "1067000000",
+                "685000000",
+                "400000000"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "DDRMinFreq",
+            "Path": "/sys/class/devfreq/ddrfreq/min_freq",
+            "Values": [
+                "1866000000",
+                "1244000000",
+                "1067000000",
+                "685000000",
+                "400000000"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "GPUMaxFreq",
+            "Path": "/sys/class/devfreq/gpufreq/max_freq",
+            "Values": [
+                "1037000000",
+                "960000000",
+                "807000000",
+                "533000000",
+                "400000000",
+                "178000000"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "GPUMinFreq",
+            "Path": "/sys/class/devfreq/gpufreq/min_freq",
+            "Values": [
+                "1037000000",
+                "960000000",
+                "807000000",
+                "533000000",
+                "400000000",
+                "178000000"
+
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
@@ -86,6 +139,18 @@
             "Value": "1402000"
         },
         {
+            "PowerHint": "INTERACTION",
+            "Node": "DDRMinFreq",
+            "Duration": 0,
+            "Value": "685000000"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "533000000"
+        },
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterMinFreq",
             "Duration": 1500,
@@ -96,6 +161,18 @@
             "Node": "CPUBigClusterMinFreq",
             "Duration": 1500,
             "Value": "2362000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "DDRMinFreq",
+            "Duration": 1500,
+            "Value": "1866000000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "GPUMinFreq",
+            "Duration": 1500,
+            "Value": "1037000000"
         },
         {
             "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
