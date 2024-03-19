@@ -104,6 +104,25 @@
             "ResetOnInit": true
         },
         {
+            "Name": "TASchedtuneBoost",
+            "Path": "/dev/stune/top-app/schedtune.boost",
+            "Values": [
+                "100",
+                "50",
+                "10"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "FGSchedtuneBoost",
+            "Path": "/dev/stune/foreground/schedtune.boost",
+            "Values": [
+                "100",
+                "0"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
@@ -151,6 +170,12 @@
             "Value": "533000000"
         },
         {
+            "PowerHint": "INTERACTION",
+            "Node": "TASchedtuneBoost",
+            "Duration": 0,
+            "Value": "50"
+        },
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterMinFreq",
             "Duration": 1500,
@@ -173,6 +198,18 @@
             "Node": "GPUMinFreq",
             "Duration": 1500,
             "Value": "1037000000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "TASchedtuneBoost",
+            "Duration": 1500,
+            "Value": "100"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "FGSchedtuneBoost",
+            "Duration": 1500,
+            "Value": "100"
         },
         {
             "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
