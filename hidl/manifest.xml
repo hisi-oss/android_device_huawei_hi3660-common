@@ -411,33 +411,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.huawei.hardware.huawei_security_vnode</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwSecurityVNode</name>
-            <instance>HwInSExtNode</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.huaweiantitheft</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHuaweiAntiTheft</name>
-            <instance>huaweiantitheft</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.huaweisigntool</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISignTool</name>
-            <instance>huaweisigntool</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.hwdisplay</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -489,15 +462,6 @@
         <interface>
             <name>IHwStp</name>
             <instance>hwstp</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwupdate</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwUpdate</name>
-            <instance>hwupdate_hal</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -560,15 +524,6 @@
         <version>1.0</version>
         <interface>
             <name>IHWNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.otherdevices</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOtherdevices</name>
             <instance>default</instance>
         </interface>
     </hal>
